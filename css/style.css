@@ -18,7 +18,7 @@ body .game {
 }
 body .game .phone {
   position: relative;
-  border: 3px solid black;
+  border: 4px solid black;
   border-radius: 40px;
   width: 400px;
   height: 600px;
@@ -27,105 +27,464 @@ body .game .phone {
 }
 body .game .phone .layer-1 {
   position: absolute;
-  z-index: 1;
-  width: 100px;
-  height: 80%;
-  background-color: white;
   bottom: 0;
-  right: 80px;
+  width: 100px;
+  background-color: lightcyan;
   border: 1px solid gray;
+  z-index: 1;
+  height: 80%;
+  right: 90px;
+}
+body .game .phone .layer-1 .left-ear--outer {
+  background: white;
+  border-radius: 90%;
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  left: 10px;
+}
+body .game .phone .layer-1 .left-ear--inner {
+  background: pink;
+  border-radius: 90%;
+  width: 10px;
+  height: 50px;
+  position: absolute;
+  left: 15px;
+  top: 8px;
+}
+body .game .phone .layer-1 .right-ear--outer {
+  background: white;
+  border-radius: 90%;
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  right: 10px;
+}
+body .game .phone .layer-1 .right-ear--inner {
+  background: pink;
+  border-radius: 90%;
+  width: 10px;
+  height: 50px;
+  position: absolute;
+  right: 15px;
+  top: 8px;
+}
+body .game .phone .layer-1 .head {
+  background: white;
+  border-radius: 50%;
+  height: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  top: 30px;
+  width: 100%;
+}
+body .game .phone .layer-1 .head .eyes {
+  background: gray;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  top: 15px;
+}
+body .game .phone .layer-1 .head .left-eye {
+  left: 30px;
+}
+body .game .phone .layer-1 .head .right-eye {
+  right: 30px;
 }
 body .game .phone .layer-2 {
   position: absolute;
-  z-index: 2;
-  width: 100px;
-  height: 80%;
-  background-color: white;
   bottom: 0;
-  left: 80px;
+  width: 100px;
+  background-color: lightcyan;
   border: 1px solid gray;
+  z-index: 2;
+  height: 80%;
+  left: 90px;
+}
+body .game .phone .layer-2 .left-ear--outer {
+  background: white;
+  border-radius: 90%;
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  left: 10px;
+}
+body .game .phone .layer-2 .left-ear--inner {
+  background: pink;
+  border-radius: 90%;
+  width: 10px;
+  height: 50px;
+  position: absolute;
+  left: 15px;
+  top: 8px;
+}
+body .game .phone .layer-2 .right-ear--outer {
+  background: white;
+  border-radius: 90%;
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  right: 10px;
+}
+body .game .phone .layer-2 .right-ear--inner {
+  background: pink;
+  border-radius: 90%;
+  width: 10px;
+  height: 50px;
+  position: absolute;
+  right: 15px;
+  top: 8px;
+}
+body .game .phone .layer-2 .head {
+  background: white;
+  border-radius: 50%;
+  height: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  top: 30px;
+  width: 100%;
+}
+body .game .phone .layer-2 .head .eyes {
+  background: gray;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  top: 15px;
+}
+body .game .phone .layer-2 .head .left-eye {
+  left: 30px;
+}
+body .game .phone .layer-2 .head .right-eye {
+  right: 30px;
 }
 body .game .phone .layer-3 {
-  width: 300px;
-  height: 70%;
   position: absolute;
+  bottom: 0;
+  width: 250px;
+  background-color: wheat;
+  border: 1px solid brown;
+  color: li;
+  height: 70%;
   z-index: 3;
   left: 50%;
   transform: translate(-50%);
-  bottom: 0;
-  background-color: wheat;
-  border: 1px solid brown;
 }
 body .game .phone .layer-4 {
   position: absolute;
-  z-index: 4;
-  width: 100px;
-  height: 60%;
-  background-color: white;
   bottom: 0;
-  left: 40px;
+  width: 100px;
+  background-color: lightcyan;
   border: 1px solid gray;
+  z-index: 4;
+  height: 60%;
+  left: 40px;
+}
+body .game .phone .layer-4 .left-ear--outer {
+  background: white;
+  border-radius: 90%;
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  left: 10px;
+}
+body .game .phone .layer-4 .left-ear--inner {
+  background: pink;
+  border-radius: 90%;
+  width: 10px;
+  height: 50px;
+  position: absolute;
+  left: 15px;
+  top: 8px;
+}
+body .game .phone .layer-4 .right-ear--outer {
+  background: white;
+  border-radius: 90%;
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  right: 10px;
+}
+body .game .phone .layer-4 .right-ear--inner {
+  background: pink;
+  border-radius: 90%;
+  width: 10px;
+  height: 50px;
+  position: absolute;
+  right: 15px;
+  top: 8px;
+}
+body .game .phone .layer-4 .head {
+  background: white;
+  border-radius: 50%;
+  height: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  top: 30px;
+  width: 100%;
+}
+body .game .phone .layer-4 .head .eyes {
+  background: gray;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  top: 15px;
+}
+body .game .phone .layer-4 .head .left-eye {
+  left: 30px;
+}
+body .game .phone .layer-4 .head .right-eye {
+  right: 30px;
 }
 body .game .phone .layer-5 {
   position: absolute;
-  z-index: 5;
-  width: 250px;
-  height: 50%;
   bottom: 0;
+  width: 250px;
   background-color: wheat;
   border: 1px solid brown;
+  color: li;
+  z-index: 5;
+  height: 50%;
   border-radius: 0 0 0 40px;
 }
 body .game .phone .layer-6 {
   position: absolute;
-  z-index: 6;
-  width: 100px;
-  height: 40%;
-  background-color: white;
   bottom: 0;
-  right: 40px;
+  width: 100px;
+  background-color: lightcyan;
   border: 1px solid gray;
+  z-index: 6;
+  height: 40%;
+  right: 40px;
+}
+body .game .phone .layer-6 .left-ear--outer {
+  background: white;
+  border-radius: 90%;
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  left: 10px;
+}
+body .game .phone .layer-6 .left-ear--inner {
+  background: pink;
+  border-radius: 90%;
+  width: 10px;
+  height: 50px;
+  position: absolute;
+  left: 15px;
+  top: 8px;
+}
+body .game .phone .layer-6 .right-ear--outer {
+  background: white;
+  border-radius: 90%;
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  right: 10px;
+}
+body .game .phone .layer-6 .right-ear--inner {
+  background: pink;
+  border-radius: 90%;
+  width: 10px;
+  height: 50px;
+  position: absolute;
+  right: 15px;
+  top: 8px;
+}
+body .game .phone .layer-6 .head {
+  background: white;
+  border-radius: 50%;
+  height: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  top: 30px;
+  width: 100%;
+}
+body .game .phone .layer-6 .head .eyes {
+  background: gray;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  top: 15px;
+}
+body .game .phone .layer-6 .head .left-eye {
+  left: 30px;
+}
+body .game .phone .layer-6 .head .right-eye {
+  right: 30px;
 }
 body .game .phone .layer-7 {
   position: absolute;
-  z-index: 7;
-  width: 250px;
-  height: 30%;
-  background-color: wheat;
   bottom: 0;
-  right: 0;
+  width: 250px;
+  background-color: wheat;
   border: 1px solid brown;
+  color: li;
+  z-index: 7;
+  height: 30%;
+  right: 0;
   border-radius: 0 0 40px 0;
 }
 body .game .phone .layer-8 {
-  width: 250px;
-  height: 20%;
   position: absolute;
+  bottom: 0;
+  width: 250px;
+  background-color: wheat;
+  border: 1px solid brown;
+  color: li;
+  height: 20%;
   z-index: 8;
   left: 50%;
   transform: translate(-50%);
-  bottom: 0;
-  background-color: green;
-  border: 1px solid brown;
 }
 body .game .phone .layer-9 {
   position: absolute;
+  bottom: 0;
+  width: 100px;
+  background-color: lightcyan;
+  border: 1px solid gray;
   z-index: 9;
   width: 150px;
   height: 10%;
-  bottom: 0;
-  background-color: white;
-  border: 1px solid gray;
   border-radius: 0 0 0 40px;
+}
+body .game .phone .layer-9 .left-ear--outer {
+  background: white;
+  border-radius: 90%;
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  left: 10px;
+}
+body .game .phone .layer-9 .left-ear--inner {
+  background: pink;
+  border-radius: 90%;
+  width: 10px;
+  height: 50px;
+  position: absolute;
+  left: 15px;
+  top: 8px;
+}
+body .game .phone .layer-9 .right-ear--outer {
+  background: white;
+  border-radius: 90%;
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  right: 10px;
+}
+body .game .phone .layer-9 .right-ear--inner {
+  background: pink;
+  border-radius: 90%;
+  width: 10px;
+  height: 50px;
+  position: absolute;
+  right: 15px;
+  top: 8px;
+}
+body .game .phone .layer-9 .head {
+  background: white;
+  border-radius: 50%;
+  height: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  top: 30px;
+  width: 100%;
+}
+body .game .phone .layer-9 .head .eyes {
+  background: gray;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  top: 15px;
+}
+body .game .phone .layer-9 .head .left-eye {
+  left: 30px;
+}
+body .game .phone .layer-9 .head .right-eye {
+  right: 30px;
 }
 body .game .phone .layer-10 {
   position: absolute;
-  z-index: 10;
-  width: 150px;
-  height: 10%;
   bottom: 0;
-  right: 0;
-  background-color: white;
+  width: 100px;
+  background-color: lightcyan;
   border: 1px solid gray;
+  z-index: 10;
+  height: 10%;
+  right: 0;
   border-radius: 0 0 40px 0;
+}
+body .game .phone .layer-10 .left-ear--outer {
+  background: white;
+  border-radius: 90%;
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  left: 10px;
+}
+body .game .phone .layer-10 .left-ear--inner {
+  background: pink;
+  border-radius: 90%;
+  width: 10px;
+  height: 50px;
+  position: absolute;
+  left: 15px;
+  top: 8px;
+}
+body .game .phone .layer-10 .right-ear--outer {
+  background: white;
+  border-radius: 90%;
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  right: 10px;
+}
+body .game .phone .layer-10 .right-ear--inner {
+  background: pink;
+  border-radius: 90%;
+  width: 10px;
+  height: 50px;
+  position: absolute;
+  right: 15px;
+  top: 8px;
+}
+body .game .phone .layer-10 .head {
+  background: white;
+  border-radius: 50%;
+  height: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  top: 30px;
+  width: 100%;
+}
+body .game .phone .layer-10 .head .eyes {
+  background: gray;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  top: 15px;
+}
+body .game .phone .layer-10 .head .left-eye {
+  left: 30px;
+}
+body .game .phone .layer-10 .head .right-eye {
+  right: 30px;
 }/*# sourceMappingURL=style.css.map */
