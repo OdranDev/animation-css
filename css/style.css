@@ -1,3 +1,11 @@
-h1 {
-  color: red;
+body {
+  counter-reset: game;
+}
+
+input:checked {
+  counter-increment: game;
+}
+
+.total-counter::after {
+  content: counter(game);
 }/*# sourceMappingURL=style.css.map */
