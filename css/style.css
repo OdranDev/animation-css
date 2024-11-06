@@ -730,12 +730,20 @@ body .game .phone .layer-10 .circle4 {
   background-color: #fff;
   border-radius: 40px;
 }
+body .game .phone .title {
+  display: flex;
+  justify-content: center;
+  margin: 45px 0 10px;
+}
+body .game .phone .title img {
+  width: 60%;
+}
 body .game .phone .score {
   color: #a54a38;
   font-family: Arial, sans-serif;
   font-size: 16px;
   text-align: center;
 }
-body .game .phone::after {
+body .game .phone .score::after {
   content: counter(score);
 }/*# sourceMappingURL=style.css.map */

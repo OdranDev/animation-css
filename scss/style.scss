@@ -197,7 +197,6 @@ body {
                 right: 90px;
 
                 animation-duration: 2s;
-
             }
 
             .layer-2 {
@@ -321,15 +320,22 @@ body {
                 }
 
             }
-
+            .title {
+                display: flex;
+                justify-content: center;
+                margin: 45px 0 10px;
+                img{
+                    width: 60%
+                }
+            }
             .score {
                 color: $dark-brown;
                 font-family: Arial, sans-serif;
                 font-size: 16px;
-                text-align: center
-            }
-            &::after{
-                content: counter(score);
+                text-align: center;
+                &::after{
+                    content: counter(score);
+                }
             }
         }
     }
