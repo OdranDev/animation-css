@@ -39,12 +39,14 @@ $white: #fff;
     @include jumps;
 
     input[type=checkbox] {
-        position: absolute;
         appearance: none;
         cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 0;
         z-index: 1;
         width: 100%;
-        height: 80px;
+        height: 100px;
     }
 
     .left-ear--outer {
@@ -107,11 +109,11 @@ $white: #fff;
         }
 
         .left-eye {
-            left: 30px;
+            left: 40px;
         }
 
         .right-eye {
-            right: 30px;
+            right: 40px;
         }
 
     }
@@ -151,7 +153,7 @@ $white: #fff;
         }
 
         50% {
-            bottom: 50px;
+            bottom: 60px;
         }
 
         100% {
@@ -162,25 +164,7 @@ $white: #fff;
 
 
 body {
-    counter-reset: game;
-
-    header {
-        nav {
-            ul {
-                li {
-                    input:checked {
-                        counter-increment: game;
-                    }
-
-                    // .shield{}            
-                }
-            }
-        }
-
-        .total-counter::after {
-            content: counter(game);
-        }
-    }
+    counter-reset: score;
 
     .game {
         margin: 0;
@@ -191,14 +175,20 @@ body {
         display: grid;
         place-items: center;
 
+
         .phone {
+            text-align: center;
             position: relative;
             border: 4px solid black;
             border-radius: 40px;
             width: 400px;
-            height: 600px;
+            height: 95vh;
             background-color: lightblue;
             box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.30), 0px 15px 12px rgba(0, 0, 0, 0.25);
+
+            input[type=checkbox]:checked {
+                counter-increment: score;
+            }
 
             .layer-1 {
                 @include bunny;
@@ -207,6 +197,7 @@ body {
                 right: 90px;
 
                 animation-duration: 2s;
+
             }
 
             .layer-2 {
@@ -282,22 +273,24 @@ body {
 
             .layer-10 {
                 z-index: 10;
-                height: 10%;
+                height: 20%;
                 width: 100%;
                 position: absolute;
                 bottom: 0;
                 border-radius: 0 0 40px 40px;
                 overflow: hidden;
-                .circle1{
+
+                .circle1 {
                     position: absolute;
                     left: 0;
                     bottom: 0;
                     width: 20%;
                     height: 100%;
                     background-color: $white;
-                    border-radius: 50%;
+                    border-radius: 40px;
                 }
-                .circle2{
+
+                .circle2 {
                     position: absolute;
                     left: 0;
                     bottom: 0;
@@ -306,7 +299,8 @@ body {
                     background-color: $white;
                     border-radius: 50%;
                 }
-                .circle3{
+
+                .circle3 {
                     position: absolute;
                     right: 0;
                     bottom: 0;
@@ -315,7 +309,8 @@ body {
                     background-color: $white;
                     border-radius: 40px;
                 }
-                .circle4{
+
+                .circle4 {
                     position: absolute;
                     right: 0;
                     bottom: 0;
@@ -325,6 +320,16 @@ body {
                     border-radius: 40px;
                 }
 
+            }
+
+            .score {
+                color: $dark-brown;
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+                text-align: center
+            }
+            &::after{
+                content: counter(score);
             }
         }
     }
